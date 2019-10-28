@@ -17,9 +17,17 @@ for (let p = 0; p < 20; p++) {
     document.write("o")
     
 }
+	
 </script>
+	
+    <script>
+        document.write('O'.repeat(20))
+    </script>
 <pre>
 
+    <script>
+        document.write('a o '.repeat(41))
+    </script>
 
 
 </pre>
@@ -29,8 +37,8 @@ for (let p = 0; p < 20; p++) {
         Всього символів 82.
 </pre>
 <script>
-for (let p = 0; p < 85; p++) {
-    document.write(" a o ")
+for (let p = 0; p < 41; p++) {
+    document.write(" a o")
     
 }
 </script>
@@ -42,8 +50,23 @@ for (let p = 0; p < 85; p++) {
 for (let i=1; i<11;  i++)
 {
 	document.write((i+". Пункт")+" "+(i+" <br> "))
+	document.write('${i}. Пункт ${i} <br>')	
 }
+	
+	
 </script>
+	////////////------- Версія 2
+    <script>
+        document.write('<ol>')
+        for (let i = 1; i < 11; i++) {
+            document.write(`
+            <li>
+                Product # ${i}                
+            </li>        
+            `)            
+        }
+        document.write('</ol>')
+    </script>	
 <!-- <pre>
 
 
@@ -53,7 +76,7 @@ for (let i=1; i<11;  i++)
 <script>
     
 for (let i=1; i<11;  i++)
-{
+{               ДОРОБИТИ 2 СПОСОБАМИ
 	document.write(<ul type="disk"><li> Пункт</li></ul>+" "+i+" <br> ")
 }
 </script> ---->
