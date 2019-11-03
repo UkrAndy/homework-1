@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Задача 0. Створити функцію, яка за номером місяця повертає пору року, до якої відноситься цей місяць.
+
+        function GetSeasons(season) {
+
+            switch (season) {
+                case 1:
+                case 2:
+                case 3: return "Winter"
+                case 4:
+                case 5:
+                case 6: return "Spring"
+                case 7:
+                case 8:
+                case 9: return "Summer"
+                case 10:
+                case 11:
+                case 12: return "Autumn"
+
+
+
+                default: return "Error"
+
+            }
+        }
+        let month = parseInt(prompt("Enter the month please"))
+        let result = GetSeasons(month)
+        document.write(result)
+    </script>
+
+    <script>
+        //Задача 1. Створити функцію, яка за номером місяця повертає його назву.
+        function Getmonth(months) {
+
+            switch (months) {
+
+                case 1: return "Januar"
+                case 2: return "February"
+                case 3: return "March"
+                case 4: return "April"
+                case 5: return "May"
+                case 6: return "June"
+                case 7: return "July"
+                case 8: return "August"
+                case 9: return "September"
+                case 10: return "October"
+                case 11: return "November"
+                case 12: return "December"
+
+
+                default: return "Error"
+
+            }
+        }
+        let monthName = parseInt(prompt("Enter a number of month please"))
+        let result = Getmonth(monthName)
+        document.write(result)
+
+    </script>
+
+    <script>
+   // Задача 2. Створити функцію, яка за номером тижня повертає кількість уроків(так, як у вас було у школі).
+    
+
+   function Getweek(lessons) {
+
+switch (lessons) {
+
+    case 1: return "35 lessons"
+    case 2: return "32 lessons"
+    case 3: return "34 lessons"
+    case 4: return "33 lessons"
+    
+    default: return "Error"
+
+}
+}
+let WeekNumber = parseInt(prompt("Enter a number of week please"))
+let result = Getweek(WeekNumber)
+document.write(result)
+    </script> -->
+
+
+
+
+
+    <script>
+        // Задача 3. Створити окремі функції, які для 4 чисел знаходять:
+        // 1)суму;
+        // 2)добуток;
+        // 3)середнє арифметичне;
+        // 4)мінімальне значення. 
+
+
+        function sumNumbers(a, b, c, d) {
+
+            let sum = a + b + c + d
+
+            alert(sum)
+        }
+        let a = parseFloat(prompt("Введіть число"))
+        let b = parseFloat(prompt("Введіть число"))
+        let c = parseFloat(prompt("Введіть число"))
+        let d = parseFloat(prompt("Введіть число"))
+
+        sumNumbers(a, b, c, d)
+    </script>
+    <script>
+        function summNumber(l, g, d, m) {
+            let multiplication = l * g * d * m
+            alert(multiplication)
+        }
+        let l = parseFloat(prompt("Введіть число"))
+        let g = parseFloat(prompt("Введіть число"))
+        let d = parseFloat(prompt("Введіть число"))
+        let m = parseFloat(prompt("Введіть число"))
+        summNumber(l, g, d, m)
+
+    </script>
+
+<script>
+    function nextNumber(l, g, d, m) {
+        let average = (l * g * d * m)/4
+        alert(average)
+    }
+    let l = parseFloat(prompt("Введіть число"))
+    let g = parseFloat(prompt("Введіть число"))
+    let d = parseFloat(prompt("Введіть число"))
+    let m = parseFloat(prompt("Введіть число"))
+    nextNumber(l, g, d, m)
+
+</script>
+ <script>
+    function minNumber(l, g, d, m) {
+        let min = Math.min(l, g, d, m)
+        alert(min)
+    }
+    let l = parseFloat(prompt("Введіть число"))
+    let g = parseFloat(prompt("Введіть число"))
+    let d = parseFloat(prompt("Введіть число"))
+    let m = parseFloat(prompt("Введіть число"))
+    minNumber(l, g, d, m)
+
+</script>
+
+
+</body>
+
+</html>
